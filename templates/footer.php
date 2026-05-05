@@ -1,13 +1,13 @@
       </div>
     </div>
     
-    <footer class="p-8 text-sm">
+    <footer class="p-4 md:p-8 text-sm">
       <p class="text-gray-600">
         <a class="p-4 font-normal no-underline" href="<?php echo $the_page_url_full . $pages[$language['active']]['legal-notice']['slug']; ?>/"><?php echo $pages[$language['active']]['legal-notice']['name']; ?></a>
         <a class="p-4 font-normal no-underline" href="<?php echo $the_page_url_full . $pages[$language['active']]['privacy-policy']['slug']; ?>/"><?php echo $pages[$language['active']]['privacy-policy']['name']; ?></a>
         <span class="block sm:inline-block py-4 sm:py-0 border-gray-600"><?php echo create_language_switcher($the_page->id); ?></span>
       </p>
-      <p class="p-8 text-gray-500 select-none">&copy; <?php echo date('Y'); ?></p>
+      <p class="p-4 text-gray-500 select-none">&copy; <?php echo date('Y'); ?></p>
     </footer>
 
     <!-- JavaScript -->        

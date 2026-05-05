@@ -59,9 +59,9 @@
     ?>
 
     <link itemprop="url" href="<?php echo $the_page_url_full; ?>"/>
-    <header class="bg-primary text-white text-2xl font-semibold p-6 md:p-8 lg:p-14 shadow-lg">
+    <header class="bg-primary text-white text-2xl font-semibold p-4 md:p-8 lg:p-14 shadow-lg">
       <p>PHP Microsite Boilerplate V2</p>
     </header>
 
     <div class="bg-white shadow-lg">
-      <div class="container mx-auto p-6 md:p-8 lg:p-20">
+      <div class="container mx-auto p-4 md:p-8 lg:p-20">

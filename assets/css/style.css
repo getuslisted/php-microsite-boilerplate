@@ -19,6 +19,7 @@
  * 3.0 - Helper
  * 4.0 - Buttons and Input
  * 5.0 - Custom Elements
+ * 6.0 - Mobile Responsive
  * 
  * 
  * Note: Mind to minimize this file.
@@ -337,4 +338,48 @@ a.lang_menu_item svg {
 a.lang_menu_item:hover svg {
   opacity: 1;
   right: -2rem;
+}
+
+
+/**
+ * 6.0 - Mobile Responsive
+ */
+
+/* Prevent horizontal overflow on all screen sizes */
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* Sidebar layout helper: side-by-side on desktop, stacked with sidebar hidden on mobile */
+.layout-with-sidebar {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1.5rem;
+  text-align: left;
+}
+
+.layout-sidebar {
+  flex-shrink: 0;
+  width: 260px;
+}
+
+.layout-main {
+  flex: 1;
+  min-width: 0;
+  text-align: left;
+}
+
+@media (max-width: 767px) {
+  .layout-with-sidebar {
+    flex-wrap: wrap;
+  }
+
+  .layout-sidebar {
+    display: none;
+  }
+
+  .layout-main {
+    width: 100%;
+  }
 }
